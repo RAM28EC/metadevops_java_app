@@ -5,14 +5,12 @@ pipeline {
     stages {
         stage('gitCheckout') {
             steps {
-                script {
-                    gitCheckout{
-                        branch: 'main',
-                        url: 'https://github.com/RAM28EC/metadevops_java_app.git'
-
-                    }
-                }
+            gitCheckout{
+                branch: 'main',
+                url: 'https://github.com/RAM28EC/metadevops_java_app.git'
             }
+            }    
+            
         }
     }
     
