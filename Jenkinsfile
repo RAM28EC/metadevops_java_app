@@ -7,7 +7,7 @@ pipeline {
             steps {
                 script {
                     gitCheckout{
-                        branch: 'main',
+                        branch: "main",
                         url: "https://github.com/RAM28EC/metadevops_java_app.git"
                     }
                 }
