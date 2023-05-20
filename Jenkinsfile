@@ -4,12 +4,14 @@ pipeline {
     agent any
     stages {
         stage('gitCheckout') {
-            steps {
-            gitCheckout{
-                branch: 'main',
-                url: 'https://github.com/RAM28EC/metadevops_java_app.git'
-            }
-            }    
+            steps{
+                script{
+                    gitCheckout(
+                        branch: 'main',
+                        url: 'https://github.com/RAM28EC/metadevops_java_app.git'
+                    )
+                }
+            }   
             
         }
     }
